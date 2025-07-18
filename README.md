@@ -13,3 +13,6 @@ It demonstrates how to build a full-stack data pipeline, leveraging automation, 
 https://github.com/cmurga95/sports-performance
 
 Bar path tracker using machine learning vision tools. Designed to analyze performance and results over time from weight training.
+
+This is a project to track the path of a barbell during a lift to analyse technique and performance. For now I took a model from RoboFlow, but my intention is to train a model on my own. I tried Training a YOLO v9 model on my computer but it would take too long. Next I tried to use EC2 instance on AWS but free version was too limited. Next I tried Google Collab but it was limited as well.
+Next steps involves training a NN on keras framework or installing Linux and using ROCm, pytorch supports gpu processing for nn training, that will let me leverage my GPU.
