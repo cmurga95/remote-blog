@@ -2,7 +2,7 @@
 Hi, nice to meet you I am Carlos!
 Detail-oriented Data Analyst  experienced in building automated data pipelines, dashboards and reports. Experienced in SQL, Tableau and Python.
 
-**WIP** 
+#### Work in Progress
 AWS - Data Engineer certification
 
 Masters of Analytics student at Georgia Institute of Technology (2025-2027)
