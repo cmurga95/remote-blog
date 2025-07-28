@@ -73,6 +73,7 @@ Setting a proper detection threshold is crucial for accurate neural data analysi
 ## Spike Validation
 ### Extraction of Spike Windows to validate visually
 ![Pasted image 20250728151200](attachments/Pasted%20image%2020250728151200.png)
+
 A strategy to validate the spikes is to first take a spike waveform that we visually validate and reconstruct a wavelet based on the frequencies of said spike. Or take a spike that already looks like the spike wavelet.
 
 But first, denoising the signal will improve the results. For this, we use the Teager Energy Operator and reconstruct each spike, after this use the wavelet
@@ -95,10 +96,15 @@ Common levels are:
 | 95%   | 1.96    |
 | 99%   | 2.576   |
 ### Sample size
+
 $n = \frac{z^2 \cdot p \cdot (1 - p)}{e^2}$
+
 p = population proportion
+
 e = margin of error 
+
 z = z score associated with confidence level 
+
 ##### For finite populations (like ours)
 If total number of spikes (N) is known and relatively small (e.g., <100,000), adjust the sample size:
 
@@ -112,6 +118,7 @@ It calculates the energy of a signal
 For this we should find signals where spikes are NOT present 
 
 For discrete signals:
+
 $x(n)=\frac{x(n)^2−x(n−1)x(n+1))}{T^2}$
 
 Assumption of T = 1
@@ -126,7 +133,10 @@ But we can also use $1/fs$
 ### Frequency Spectrum Analysis
 By deconstructing the signal in its frequency spectrum, we can determine if a signal is noise or a real expected signal from a neuron.
 ![Pasted image 20250728151334](attachments/Pasted%20image%2020250728151334.png)
+
 FFT has low temporal resolution, another option is to run the analysis using Stationary Wavelet Transform, which extends the Fourier transform to have better temporal resolution. 
+
 ![Pasted image 20250513124836](attachments/Pasted%20image%2020250513124836.png)
+
 SWT is decomposed into Low frequency Component (A) and the high frequency component (D).
 If we take the signal power ratio (D/A), we want to have a *high* signal to noise ratio. Based on this, we can then build a threshold and determine real signals from noise.
