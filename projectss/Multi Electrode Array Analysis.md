@@ -1,5 +1,6 @@
 ## Summary
 My work as a Research Technician at the University of North Carolina involved working with Multi Electrode Array (MEA). This is a technique to measure electrical activity from neurons. 
+The Data Acquisition step involved 
 ```mermaid
 graph TB
 	A[Data acquisition] --> B[Generate Files]
@@ -65,7 +66,7 @@ Assumption of T = 1
 But we can also use $1/fs$
 ##### Implementation to denoise signal 
 1. Find a time where a signal is not present (e.g. It is pure noise) for each electrode (take 3 random spikes and use 1 ms before and 1 ms after, we can validate visually).
-2. We assume that this noise is stationary (doesn't change overtime) and use this TEO (calculated on a per electrode basis) for each own electrode (if we want to validate each weeks readings we need to re-calculate for each reading, because noise can vary)
+2. We assume that this noise is stationary (doesn't change overtime) and use TEO (calculated on a per electrode basis) for each own electrode (if we want to validate each weeks readings we need to re-calculate for each reading, because noise can vary)
 3. Based on this we clean each previously selected spike and reconstruct a clean spike. 
 4. Move to SWT
 
