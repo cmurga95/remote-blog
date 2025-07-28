@@ -110,6 +110,7 @@ If total number of spikes (N) is known and relatively small (e.g., <100,000), ad
 
 $n=\frac {n_{0}}{1+\frac{(n_{0}−1)}{N}}$
 ​
+
 This prevents oversampling when N is small.
 
 **Important note, spikes selected must be random**
