@@ -1,5 +1,5 @@
 ## Summary
-My work as a Research Technician at the University of North Carolina involved working with Multi Electrode Array (MEA). This is a technique to measure electrical activity from neurons. 
+My work as a Research Technician at the University of North Carolina involved working with Multi Electrode Array (MEA). This is a technique to measure electrical activity from neurons. Work consisted in cleaning, merging and visualization of this in an organized and accurate manner.
 This is an over all workflow:
 ```mermaid
 graph TB
