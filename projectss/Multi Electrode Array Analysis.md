@@ -64,15 +64,15 @@ Setting a proper detection threshold is crucial for accurate neural data analysi
 
 ***The images below are created from synthetic data for demonstration purposes***
 #### 2uV noise 
-![[attachments/Pasted image 20250507225657.png]]
+![Pasted image 20250507225657](Pasted%20image%2020250507225657.png)
 #### 4 uV noise
-![[attachments/Pasted image 20250507225703.png]]
+![Pasted image 20250507225703](Pasted%20image%2020250507225703.png)
 #### 8 uV noise
-![[attachments/Pasted image 20250507225709.png]]
+![Pasted image 20250507225709](Pasted%20image%2020250507225709.png)
 
 ## Spike Validation
 ### Extraction of Spike Windows to validate visually
-![[attachments/Pasted image 20250728151200.png]]
+![Pasted image 20250728151200](Pasted%20image%2020250728151200.png)
 A strategy to validate the spikes is to first take a spike waveform that we visually validate and reconstruct a wavelet based on the frequencies of said spike. Or take a spike that already looks like the spike wavelet.
 
 But first, denoising the signal will improve the results. For this, we use the Teager Energy Operator and reconstruct each spike, after this use the wavelet
@@ -125,8 +125,8 @@ But we can also use $1/fs$
 
 ### Frequency Spectrum Analysis
 By deconstructing the signal in its frequency spectrum, we can determine if a signal is noise or a real expected signal from a neuron.
-![[attachments/Pasted image 20250728151334.png]]
+![Pasted image 20250728151334](Pasted%20image%2020250728151334.png)
 FFT has low temporal resolution, another option is to run the analysis using Stationary Wavelet Transform, which extends the Fourier transform to have better temporal resolution. 
-![[attachments/Pasted image 20250513124836.png]]
+![Pasted image 20250513124836](Pasted%20image%2020250513124836.png)
 SWT is decomposed into Low frequency Component (A) and the high frequency component (D).
 If we take the signal power ratio (D/A), we want to have a *high* signal to noise ratio. Based on this, we can then build a threshold and determine real signals from noise.
