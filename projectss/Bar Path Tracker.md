@@ -13,3 +13,5 @@ flowchart TB
 ```
 
 ![[Pasted image 20250728153306.png]]
+
+[Learn more about it here](https://github.com/cmurga95/sports-performance/blob/main/bar-path-analysis/roboflow-trained.ipynb)
