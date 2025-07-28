@@ -14,7 +14,7 @@ Python (Pandas, Dask, Numpy, Seaborn, Matplotlib), Excel
 The Data Acquisition step consisted in reading electrical activity of a plate. 
 Below is an example of a plate
 
-![Plate_Map](Pasted%20image%2020250728150740.png)
+![Plate_Map](attachments/Pasted%20image%2020250728150740.png)
 From which many files are generated (see below). The file we are the most interested in is the **Statistics Summary**. It contained a summary of the behavior of the plate for each well in terms of several metrics (Mean Firing Rate, Number of Spikes, Average Spikes per Burst, Std spikes per Bursts, etc.).
 
 ```mermaid
