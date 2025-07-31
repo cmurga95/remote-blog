@@ -2,12 +2,9 @@
 flowchart LR
 	A["Data Orchestration (SQL)"] --> B["Validation"] --> C["Tableau"]
 ```
-## Data Orchestration 
-This phase consisted of joining data from many different sources, such as: 
-- Agents
-	- Making sure the agents are currently active within the company (not fired)
-- Calls
-	- Pulling the calls made by the agents
-- Debt collections
-	- Linking the phone numbers from agent calls to debt collections customer information
-	- 
+## Skills
+SQL, Tableau
+## Description
+This dashboard tracks **Key Performance Indicators** (Average Handle Time, Average Calls per Agent, Total Calls, Average Idle Time, etc) used in a call center 
+This Dashboard was used by the **debt collections department**. The goal was to identify areas of opportunity to optimize operations by tracking **Key Performance Indicators** (Average Handle Time, Average Calls per Agent, Total Calls, Average Idle Time, etc).
+It involved orchestrating the ingestion of data from several sources (SQL) to make it usable to design a Tableau dashboard. Ultimately leading to optimizing resources and improving overall operation.
